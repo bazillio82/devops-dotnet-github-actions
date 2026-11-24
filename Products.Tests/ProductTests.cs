@@ -11,12 +11,16 @@ public class ProductTests
         // Arrange
         var product = new Product
         {
+            Id = 1,
             Name = "Milk",
+            Description = "Fresh milk",
             Price = 32.0m
         };
 
         // Assert
+        Assert.Equal(1, product.Id);
         Assert.Equal("Milk", product.Name);
+        Assert.Equal("Fresh milk", product.Description);
         Assert.Equal(32.0m, product.Price);
     }
 }
