@@ -12,11 +12,13 @@ public class ProductTests
         var product = new Product
         {
             Name = "Milk",
+            Description = "Fresh milk",
             Price = 32.0m
         };
 
         // Assert
         Assert.Equal("Milk", product.Name);
+        Assert.Equal("Fresh milk", product.Description);
         Assert.Equal(32.0m, product.Price);
     }
 }
